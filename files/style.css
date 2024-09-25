@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Font*/
+/*Owners Bold*/
+@font-face {
+  font-family: "Owners-bold";
+  src: url("../files/font/owners/woff2/Owners-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Reset*/
+
+/*Font family*/
+
+body {
+  font-family: "Owners-bold";
+  background-color: white;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  letter-spacing: 0.3px;
+  font-size: 13px;
+  line-height: 1.23;
+  word-spacing: 0.1px;
+  padding: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover,
+span {
+  color: #ff614f;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 10px;
+}
+
+p,
+li {
+  display: inline;
+  margin: 0;
+}
+
+li a:after {
+  content: ",";
+}
+
+li:last-child a:after {
+  content: "" !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  line-height: 0;
+}
+
+@media only screen and (max-width: 412px) {
+  body {
+    font-size: 19px;
+  }
+  li,
+  p {
+    display: inherit;
+  }
+  ul,
+  span {
+    display: block;
+  }
+
+  lli:last-child a:after {
+    content: "" !important;
+  }
+
+  p {
+    padding-bottom: 50px;
+  }
+
+  ul {
+    padding-bottom: 30vh;
+  }
+}
